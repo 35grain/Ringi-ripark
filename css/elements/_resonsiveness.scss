@@ -95,6 +95,13 @@
         pointer-events: unset;
     }
 
+    #asukoht_pilt {
+        h2 {
+            max-width: 85%;
+            width: max-content;
+        }
+    }
+
     #asukoht_kaart {
         background-color: $brand2light;
         height: auto;
