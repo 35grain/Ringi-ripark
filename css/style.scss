@@ -12,6 +12,7 @@ body {
     color: $bodyText;
     border: 16px solid #FFFFFF;
     border-bottom: none;
+    overflow-x: hidden;
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
