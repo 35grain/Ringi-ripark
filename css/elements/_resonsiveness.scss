@@ -26,14 +26,25 @@
     }
 }
 
-@media screen and (max-width: 1200px), (max-height: 650px), (max-height: 1024px) and (max-width: 1700px) {
+//Mobile devices
+@media screen and (max-width: 1200px),
+(max-height: 650px),
+(max-height: 1024px) and (max-width: 1700px) {
     h2 {
         margin-bottom: 24px;
         padding-top: 8px;
     }
 
+    .cookie-padding {
+        padding-top: 40px;
+    }
+
     .cookies-alert {
-        display: none;
+        top: 0;
+        left: 0;
+        bottom: unset;
+        width: 100%;
+        text-align: center;
     }
 
     .sticky-cta {
