@@ -28,7 +28,7 @@ $(window).scroll(function() {
        wH = $(window).height(),
        wS = $(this).scrollTop();
    if (wS > (hT+hH-wH)){
-    $('#asukoht_kaart .info-piece,#asukoht_kaart .info-block .info-module#1,#asukoht_kaart .info-block .info-module#2').animate({"margin-right": '0', "opacity": '1'}, 1000);
+    $('#asukoht_kaart .info-piece,#asukoht_kaart .info-block').animate({"margin-right": '0', "opacity": '1'}, 1000);
    }
 });
 

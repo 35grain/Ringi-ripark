@@ -189,17 +189,13 @@
         right: 28.2%;
         transform: translate(0, -50%);
         margin-top: 6px;
+        margin-right: -150px;
+        opacity: 0;
 
         .info-module {
             background-color: #FFFFFF;
             padding: 16px;
             margin-top: 8px;
-            opacity: 0;
-            margin-right: -150px;
-
-            &:last-of-type {
-                margin-right: -180px;
-            }
         }
     }
 }
