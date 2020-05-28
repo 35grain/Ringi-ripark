@@ -1,0 +1,303 @@
+//Sections
+.content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+#intro {
+    background: url(../img/ringi-aripark1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .filter-1 {
+        height: 30.5%;
+        width: 100%;
+        margin: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .filter-2 {
+        height: 69.5%;
+        width: 100%;
+        margin: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%);
+        transform: rotate(-180deg);
+    }
+
+    nav {
+        padding: 0 31px;
+        height: 120px;
+
+        .intro-logo {
+            width: 31.2%;
+            margin-top: 28px;
+        }
+
+        .lang-selector {
+            float: right;
+            margin-top: 19px;
+
+            a {
+                font-size: 12px;
+                line-height: 18px;
+                margin-left: 13px;
+                color: #FFFFFF;
+                text-decoration: none;
+
+                &.active {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    h1 {
+        max-width: 917px;
+        text-align: center;
+        bottom: 24%;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        margin-bottom: 0;
+    }
+
+    .button {
+        &.m-primary {
+            bottom: 8.9%;
+
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+        }
+    }
+
+    .round-corner {
+        position: absolute;
+        bottom: -3.72px;
+        right: -5px;
+    }
+
+    .down-button {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        bottom: -3.72px;
+        right: -5px;
+
+        img {
+            margin-top: 12.6px;
+            transition: 1.5s;
+        }
+
+        &:hover {
+            img {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+#eelised {
+    background: $brand2light;
+    padding: 160px 171px;
+}
+
+#asukoht_pilt {
+    background: url(../img/ringi-aripark2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .filter {
+        background: linear-gradient(180deg, #ADCFE7 0%, rgba(173, 207, 231, 0) 100%);
+        mix-blend-mode: multiply;
+        width: 100%;
+        height: 100%;
+    }
+
+    h2 {
+        color: #FFFFFF;
+        position: absolute;
+        max-width: 702px;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+.modal {
+    background-color: $brand2light;
+    cursor: pointer;
+   
+    .modal-dialog {
+        margin: 0;
+        height: 100%;
+        max-width: unset;
+    }
+
+    .zoom {
+        height: 100%;
+        max-height: unset;
+        object-fit: contain;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+.mobile-modal {
+    pointer-events: none;
+
+    .l-glass {
+        display: none;
+    }
+}
+
+#asukoht_kaart {
+    background-color: $brand2light;
+    height: auto;
+
+    .button {
+        &.m-primary {
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 24px;
+            position: absolute;
+        }
+    }
+
+    .info-piece {
+        max-width: 273px;
+        position: absolute;
+        right: 4.7%;
+        margin-right: -150px;
+        top: 50%;
+        transform: translate(0, -50%);
+        opacity: 0;
+    }
+
+    .info-block {
+        position: absolute;
+        top: 50%;
+        right: 28.2%;
+        transform: translate(0, -50%);
+        margin-top: 6px;
+
+        .info-module {
+            background-color: #FFFFFF;
+            padding: 16px;
+            margin-top: 8px;
+            opacity: 0;
+            margin-right: -150px;
+
+            &:last-of-type {
+                margin-right: -180px;
+            }
+        }
+    }
+}
+
+#asukoht_kaart_yldine {
+    background-color: $brand2light;
+    height: auto;
+}
+
+.info-card {
+    height: 100%;
+    width: 40.4%;
+    padding: 82px 64px;
+    margin-right: -40.4%;
+    opacity: 0;
+    float: right;
+}
+
+#detailinfo {
+    background: url(../img/ringi-aripark3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .mobile-photo {
+        display: none;
+        width: 100%;
+    }
+
+    .info-card {
+        background: rgba(255, 255, 255, 0.85);
+
+        .button {
+            &.m-primary {
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+#kontakt {
+    background: url(../img/ringi-aripark1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 32px);
+    height: auto;
+    float: left;
+    width: 100%;
+
+    .info-card {
+        background: rgba(12, 12, 12, 0.85);
+        color: #FFFFFF;
+        min-height: inherit;
+
+        form {
+            .form-group {
+                margin-bottom: 12px;
+            }
+
+            input,
+            textarea {
+                border: 1px solid #FFFFFF;
+                background: none;
+                border-radius: 0;
+                color: inherit;
+                padding: 11px 8px;
+                font-family: Helvetica;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                width: 100%;
+                min-height: 48px;
+
+                &::placeholder {
+                    opacity: 1;
+                    color: #FFFFFF;
+                }
+
+                &:active,
+                &:focus {
+                    outline: 1px solid #FFFFFF;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+            }
+
+            button {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .contact-logo {
+        position: absolute;
+        width: 31.2%;
+        bottom: 48px;
+        left: 47px;
+    }
+}

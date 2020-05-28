@@ -1,0 +1,182 @@
+@media screen and (max-width: 1500px),
+(max-height: 700px) {
+    .info-card {
+        padding: 41px 32px;
+    }
+
+    #asukoht_kaart {
+        background-color: $brand2light;
+        height: auto;
+
+        .info-piece {
+            max-width: 240px;
+            right: 2%;
+        }
+
+        .info-block {
+            right: 23%;
+            margin-top: -18px;
+
+            .info-module {
+                background-color: #FFFFFF;
+                padding: 10px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px), (max-height: 650px), (max-height: 1024px) and (max-width: 1700px) {
+    h2 {
+        margin-bottom: 24px;
+        padding-top: 8px;
+    }
+
+    .cookies-alert {
+        display: none;
+    }
+
+    .sticky-cta {
+        width: 100%;
+        left: 0;
+        display: block;
+    }
+
+    #eelised {
+        padding: 80px 32px;
+        height: auto;
+
+        .row {
+            display: inherit;
+
+            .col:first-of-type {
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    #intro {
+
+        .round-corner,
+        .down-button,
+        .button.m-primary {
+            display: none;
+        }
+
+        nav {
+            .intro-logo {
+                width: 55.3%;
+                margin-top: 5%;
+            }
+
+            .lang-selector {
+                margin-top: 5.3%;
+            }
+        }
+
+        h1 {
+            bottom: 24%;
+            font-size: 34px;
+        }
+    }
+
+    .mobile-modal {
+        pointer-events: unset;
+    }
+
+    #asukoht_kaart {
+        background-color: $brand2light;
+        height: auto;
+        align-items: center;
+
+        .l-glass {
+            display: unset;
+            position: absolute;
+            top: 11.8%;
+            right: 13.1%;
+        }
+
+        .button {
+            &.m-primary {
+                width: calc(100% - 64px);
+                top: unset;
+                transform: unset;
+                position: relative;
+                left: unset;
+                bottom: unset;
+                margin: auto;
+            }
+        }
+
+        .info-piece {
+            position: relative;
+            opacity: 1;
+            right: 0;
+            padding: 0 32px;
+            max-width: 100%;
+            top: unset;
+            transform: unset;
+            padding-top: 48px;
+            padding-bottom: 80px;
+        }
+
+        .info-block {
+            position: relative;
+            width: 100%;
+            opacity: 1;
+            right: 0;
+            padding: 0 32px;
+            margin: 0;
+            top: unset;
+            transform: unset;
+
+            .info-module {
+                margin-top: 0;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    #asukoht_kaart_yldine {
+        .l-glass {
+            display: unset;
+            position: absolute;
+            top: 41.2%;
+            right: 11.25%;
+        }
+    }
+
+    .info-card {
+        width: 100%;
+        opacity: 1;
+        margin-right: 0;
+    }
+
+    #detailinfo {
+        height: auto;
+        background: none;
+
+        .mobile-photo {
+            display: block;
+        }
+
+        .button {
+            width: 100%;
+        }
+    }
+
+    #kontakt {
+        .info-card {
+            padding-bottom: 81px;
+
+            .g-recaptcha {
+                transform: scale(0.9);
+                margin-left: -5%;
+            }
+        }
+
+        .contact-logo {
+            display: none;
+        }
+    }
+}

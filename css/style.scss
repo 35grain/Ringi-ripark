@@ -1,6 +1,5 @@
 @import 'elements/colors';
 
-
 //General style
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -23,6 +22,7 @@ body {
     -ms-overflow-style: none;
 }
 
+//Headings
 h1 {
     color: #FFFFFF;
     text-shadow: 0px 0px 20px #000000;
@@ -43,6 +43,14 @@ h2 {
     padding-top: 16px;
 }
 
+h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 124%;
+}
+
+//General formatting
 a {
     color: inherit;
     text-decoration: underline;
@@ -50,6 +58,11 @@ a {
     &:hover {
         color: inherit;
     }
+}
+
+.body-xs {
+    font-size: 12px;
+    line-height: 18px;
 }
 
 ul {
@@ -75,6 +88,7 @@ img {
 .button {
     display: table;
     text-decoration: none;
+    text-align: center;
 
     &.m-primary {
         padding: 8px 24px;
@@ -95,7 +109,49 @@ img {
 
         &:hover {
             background-color: $error-hover;
+            text-decoration: none;
         }
+    }
+
+    &.s-secondary {
+        border: 2px solid $brand1;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        background: #FFFFFF;
+        padding: 4px 16px;
+
+        &:hover {
+            border: 2px solid $error;
+        }
+    }
+
+    &:active,
+    &:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+table {
+    border-spacing: 14px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    width: 100%;
+
+    tr {
+        border-bottom: 1px solid;
+    }
+
+    th {
+        text-align: left;
+        font-weight: normal;
+        padding: 4px;
+    }
+
+    td {
+        padding: 4px;
     }
 }
 
@@ -126,283 +182,6 @@ img {
     z-index: 10;
 }
 
-.cookies-alert {
-    background-color: #FFFFFF;
-    padding: 0 8px;
-    position: absolute;
-    bottom: 24px;
-    left: 24px;
-    z-index: 10;
-
-    p {
-        margin: 8px;
-        max-width: 183px;
-        font-size: 12px;
-        line-height: 150%;
-        display: inline-block;
-        vertical-align: middle;
-
-        a {
-            text-decoration: underline;
-            color: inherit;
-        }
-    }
-
-    .understood {
-        border: 2px solid $brand1;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 20px;
-        background: #FFFFFF;
-        margin: 12px 8px;
-        padding: 4px 16px;
-        display: inline;
-        vertical-align: middle;
-    }
-}
-
-//Sektsioonid
-.content {
-    position: absolute;
-    top: 0;
-    height: 100%;
-}
-
-#intro {
-    background: url(../img/ringi-aripark1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .filter-1 {
-        height: 30.5%;
-        width: 100%;
-        margin: 0;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%);
-    }
-
-    .filter-2 {
-        height: 69.5%;
-        width: 100%;
-        margin: 0;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%);
-        transform: rotate(-180deg);
-    }
-
-    nav {
-        padding: 0 31px;
-        height: 120px;
-
-        .intro-logo {
-            width: 31.2%;
-            margin-top: 28px;
-        }
-
-        .lang-selector {
-            float: right;
-            margin-top: 19px;
-
-            a {
-                font-size: 12px;
-                line-height: 18px;
-                margin-left: 13px;
-                color: #FFFFFF;
-                text-decoration: none;
-
-                &.active {
-                    font-weight: bold;
-                }
-            }
-        }
-    }
-
-    h1 {
-        max-width: 917px;
-        text-align: center;
-        bottom: 24%;
-        left: 50%;
-        transform: translate(-50%);
-        position: absolute;
-        margin-bottom: 0;
-    }
-
-    .button {
-        &.m-primary {
-            bottom: 8.9%;
-
-            left: 50%;
-            transform: translate(-50%);
-            position: absolute;
-        }
-    }
-
-    .ymarnurk {
-        position: absolute;
-        bottom: -3.72px;
-        right: -5px;
-    }
-
-    .down-button {
-        position: absolute;
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        background-color: #FFFFFF;
-        bottom: -3.72px;
-        right: -5px;
-
-        img {
-            margin-top: 12.6px;
-            transition: 1.5s;
-        }
-
-        &:hover {
-            img {
-                margin-top: 20px;
-            }
-        }
-    }
-}
-
-#eelised {
-    background: $brand2light;
-    padding: 160px 171px;
-}
-
-#asukoht_pilt {
-    background: url(../img/ringi-aripark2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .filter {
-        background: linear-gradient(180deg, #ADCFE7 0%, rgba(173, 207, 231, 0) 100%);
-        mix-blend-mode: multiply;
-        width: 100%;
-        height: 100%;
-    }
-
-    h2 {
-        color: #FFFFFF;
-        position: absolute;
-        max-width: 702px;
-        top: 15%;
-        left: 30%;
-    }
-}
-
-#asukoht_kaart {
-    background-color: $brand2light;
-    height: auto;
-
-    .button {
-        &.m-primary {
-            left: 50%;
-            transform: translate(-50%);
-            bottom: 24px;
-            position: absolute;
-        }
-    }
-}
-
-#asukoht_kaart_yldine {
-    background-color: $brand2light;
-    height: auto;
-}
-
-.info-card {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: 40.4%;
-    padding: 82px 64px;
-    right: -40.4%;
-    opacity: 0;
-}
-
-#detailinfo {
-    background: url(../img/ringi-aripark3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .info-card {
-        background: rgba(255, 255, 255, 0.85);
-
-        table {
-            border-spacing: 14px;
-            border-top: 2px solid;
-            border-bottom: 2px solid;
-            width: 100%;
-
-            tr {
-                border-bottom: 1px solid;
-            }
-
-            th {
-                text-align: left;
-                font-weight: normal;
-                padding: 4px;
-            }
-
-            td {
-                padding: 4px;
-            }
-        }
-
-        .button {
-            &.m-primary {
-                margin-top: 16px;
-            }
-        }
-    }
-}
-
-#kontakt {
-    background: url(../img/ringi-aripark1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .info-card {
-        background: rgba(12, 12, 12, 0.85);
-        color: #FFFFFF;
-
-        form {
-
-            input,
-            textarea {
-                border: 1px solid #FFFFFF;
-                background: none;
-                border-radius: 0;
-                color: inherit;
-                padding: 11px 8px;
-                font-family: Helvetica;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 24px;
-                width: 100%;
-
-                &::placeholder {
-                    opacity: 1;
-                    color: #FFFFFF;
-                }
-
-                &:active,
-                &:focus {
-                    outline: 1px solid #FFFFFF;
-                    -webkit-box-shadow: none;
-                    box-shadow: none;
-                }
-            }
-        }
-    }
-
-    .contact-logo {
-        position: absolute;
-        width: 31.2%;
-        bottom: 48px;
-        left: 47px;
-    }
-}
+@import 'elements/widgets';
+@import 'elements/sections';
+@import 'elements/resonsiveness';
