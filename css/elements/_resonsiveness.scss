@@ -198,3 +198,13 @@
         }
     }
 }
+
+@media screen and (min-width: 700px) {
+    #intro {
+        nav {
+            .intro-logo {
+                width: 24%;
+            }
+        }
+    }
+}
